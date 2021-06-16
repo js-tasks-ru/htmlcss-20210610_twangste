@@ -1,1 +1,43 @@
 /* Стилизация аккордеона */
+@import '../../assets/fonts/fonts.css';
+.panel {
+  border-radius: 8px;
+  padding: 24px 32px 0px 24px;
+  border: 1px solid var(--grey-3);
+  /* box-sizing: border-box; */
+  border-radius: 8px;
+  background-color: var(--white);
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--grey-4);
+}
+.panel[open] {
+  padding-bottom: 32px;
+}
+.panel__header {
+  position: relative;
+  cursor: pointer;
+  padding-bottom: 16px;
+  list-style: none;
+}
+.panel__header::after {
+  content: '';
+  position: absolute;
+  right: 8px;
+  width: 16px;
+  height: 16px;
+  border-right: 1px solid var(--grey-4);
+  border-bottom: 1px solid var(--grey-4);
+  transform: rotate(45deg);
+}
+.panel[open] .panel__header::after {
+  transform: rotate(-135deg);
+  top: 8px;
+}
+.panel__body {
+  font-size: 16px;
+  line-height: 24px;
+}
