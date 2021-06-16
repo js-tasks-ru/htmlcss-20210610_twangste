@@ -17,31 +17,35 @@
   transition: opacity 200ms ease-in-out, background 200ms ease-in-out;
 }
 
-.button__primary {
+.button-primary {
   background-color: var(--primary);
 }
+.button-primary.button-hover:hover,
+.button-primary.button-hovered {
+  background-color: var(--primary-2);
+}
 
-.button__secondary {
+.button-secondary {
   background-color: var(--secondary);
 }
 
-.button__primary:hover:not(:disabled) {
-  background-color: var(--primary-hover);
+.button-secondary.button-hover:hover,
+.button-secondary.button-hovered {
+  background-color: var(--secondary-2);
 }
 
-.button__secondary:hover:not(:disabled) {
-  background-color: var(--secondary-hover);
-}
-.button__alternate {
+.button-alternate {
   background: none;
-  border: 1px solid var(--grey-3);
-  color: var(--grey-4);
+  border: 1px solid var(--alternate);
+  color: var(--alternate-2);
 }
-.button__alternate:hover:not(:disabled) {
-  border: 2px solid var(--grey-4);
+.button-alternate.button-hover:hover,
+.button-alternate.button-hovered {
+  border: 2px solid var(--alternate-2);
 }
 
-:disabled {
+.button-disabled,
+.button-disabled:disabled {
   opacity: 0.5;
   cursor: not-allowed;
 }
