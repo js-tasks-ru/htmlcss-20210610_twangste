@@ -2,7 +2,7 @@
 .button {
   border-radius: 8px;
   height: 48px;
-  width: 189px;
+  display: inline-block;
   border: none;
   font-family: Roboto;
   font-style: normal;
@@ -17,35 +17,38 @@
   transition: opacity 200ms ease-in-out, background 200ms ease-in-out;
 }
 
-.button-primary {
+.button_primary {
   background-color: var(--primary);
 }
-.button-primary.button-hover:hover,
-.button-primary.button-hovered {
+.button_primary:hover {
   background-color: var(--primary-2);
 }
 
-.button-secondary {
+.button_secondary {
   background-color: var(--secondary);
 }
 
-.button-secondary.button-hover:hover,
-.button-secondary.button-hovered {
+.button_secondary:hover {
   background-color: var(--secondary-2);
 }
+.button_secondary:active {
+  background-color: var(--secondary);
+}
+.button_secondary:focus {
+  background-color: var(--secondary);
+}
 
-.button-alternate {
+.button_alternate {
   background: none;
   border: 1px solid var(--alternate);
   color: var(--alternate-2);
 }
-.button-alternate.button-hover:hover,
-.button-alternate.button-hovered {
+.button_alternate:hover {
   border: 2px solid var(--alternate-2);
 }
 
-.button-disabled,
-.button-disabled:disabled {
+.button_disabled,
+.button:disabled {
   opacity: 0.5;
-  cursor: not-allowed;
+  pointer-events: none;
 }
