@@ -22,3 +22,7 @@
 .container {
   font-family: 'Roboto', sans-serif;
 }
+
+.card__container {
+  width: 354px;
+}
