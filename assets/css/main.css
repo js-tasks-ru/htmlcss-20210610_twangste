@@ -30,6 +30,10 @@
 }
 
 .container {
-  width: 75%;
+  max-width: 1110px;
   margin: 0 auto;
+}
+
+.card__container {
+  width: 579px;
 }

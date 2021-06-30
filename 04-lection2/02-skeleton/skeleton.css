@@ -1,9 +1,5 @@
-.card__container {
-  width: 579px;
-}
 .skeleton {
   width: 100%;
-  height: 192px;
 
   background: var(--white);
 
@@ -12,29 +8,27 @@
   border-radius: 8px;
   padding: 1.5rem 2.5rem 1.5px 1.5rem;
 }
-.header {
+.skeleton__header {
   display: flex;
   align-items: center;
   justify-content: start;
 }
-.header__avatar {
+.skeleton__header-avatar {
   width: 64px;
   height: 64px;
   box-sizing: border-box;
   background: var(--grey-2);
   border-radius: 50%;
 }
-.caption {
+
+.skeleton__caption {
+  margin-left: 1rem;
   display: flex;
   flex-flow: column;
   flex-grow: 1;
 }
 
-.header__caption {
-  margin-left: 1rem;
-}
-
-.item {
+.skeleton__item {
   height: 20px;
   width: 100%;
   background: linear-gradient(
@@ -46,18 +40,18 @@
     var(--grey-2) 102.52%
   );
 }
-.item-small {
+.skeleton__item-small {
   width: 75%;
 }
-.item-smaller {
+.skeleton__item-smaller {
   width: 50%;
 }
 
-.body {
+.skeleton__body {
   margin-top: 1rem;
+  margin-bottom: 1.5rem;
 }
 
-.caption__item:not(:last-child),
-.body__item:not(:last-child) {
+.skeleton__item:not(:last-child) {
   margin-bottom: 8px;
 }
