@@ -30,11 +30,3 @@ body {
   max-width: 1110px;
   margin: 0 auto;
 }
-
-.card__container {
-  margin-top: 50vh;
-  width: 300px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
