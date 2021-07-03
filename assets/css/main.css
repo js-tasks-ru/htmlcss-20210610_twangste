@@ -18,6 +18,8 @@
 
   --primary: var(--blue);
   --secondary: var(--purple);
+
+  --modal-z-index: 999999;
 }
 
 * {

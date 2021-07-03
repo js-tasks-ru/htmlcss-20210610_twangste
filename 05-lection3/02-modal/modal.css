@@ -1,11 +1,11 @@
 .modal {
   display: none;
 
-  z-index: 99999999;
+  z-index: var(--modal-z-index);
 }
 
 .modal__overlay {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
@@ -22,11 +22,9 @@
   min-height: 294px;
   background-color: var(--white);
   border-radius: 8px;
-  /* margin: 0 auto; */
   display: flex;
   flex-flow: column;
   padding: 30px 40px 33px;
-  opacity: 1;
 }
 
 .modal__title {
