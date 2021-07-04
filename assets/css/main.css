@@ -5,7 +5,10 @@
   --black: #212429;
   --pink: #f784ad;
   --purple: #7048e8;
+  --purple-1: #5028c6;
   --blue: #374fc7;
+  --blue-1: #2342c0;
+
   --red: #f03d3e;
   --grey-1: #f8f9fa;
   --grey-2: #dde2e5;
@@ -16,7 +19,13 @@
   --success: var(--blue);
 
   --primary: var(--blue);
+  --primary-2: var(--blue-1);
+
   --secondary: var(--purple);
+  --secondary-2: var(--purple-1);
+
+  --alternate: var(--grey-3);
+  --alternate-2: var(--grey-4);
 }
 
 * {
