@@ -9,15 +9,6 @@
   z-index: var(--modal-z-index);
 }
 
-/* .modal__overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: var(--grey-2);
-  opacity: 0.5;
-} */
 .modal__body {
   position: absolute;
   left: 50%;
