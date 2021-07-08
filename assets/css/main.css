@@ -28,10 +28,14 @@
   --primary-2: var(--blue-1);
 
   --secondary: var(--purple);
+
+  --modal-z-index: 999999;
   --secondary-2: var(--purple-1);
 
   --alternate: var(--grey-3);
   --alternate-2: var(--grey-4);
+
+  --modal-background-color: rgba(196, 196, 196, 0.5);
 }
 
 * {
