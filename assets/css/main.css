@@ -7,7 +7,9 @@
   --purple: #7048e8;
   --purple-1: #5028c6;
   --blue: #374fc7;
-  --blue-1: #2342c0;
+
+  --blue-1: rgba(160, 177, 245, 0.2);
+  --dark-blue: #334d6e;
 
   --red: #f03d3e;
 
@@ -39,6 +41,7 @@
 body {
   height: 100%;
 }
+
 .container {
   max-width: 1110px;
   margin: 0 auto;
