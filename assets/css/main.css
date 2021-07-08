@@ -33,6 +33,8 @@
 
   --alternate: var(--grey-3);
   --alternate-2: var(--grey-4);
+
+  --modal-background-color: rgba(196, 196, 196, 0.5);
 }
 
 * {
